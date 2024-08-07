@@ -1,0 +1,10 @@
+#ignora arquivos objetos
+*.slo
+*.lo
+*.o
+*.o 
+
+#ignora executaveis
+*.exe
+*.out
+*.app
