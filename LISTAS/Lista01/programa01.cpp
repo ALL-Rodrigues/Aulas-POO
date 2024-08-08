@@ -1,5 +1,5 @@
 // Programa 01
-//exercicio01.cpp
+// Lista 01 programa01.cpp
 
 #include<iostream>
 using namespace std;
