@@ -1,5 +1,5 @@
 // Programa 03
-// Lista 01 programa03.cpp
+// Lista 01 exec03.cpp
 
 #include<iostream>
 using namespace std;
@@ -14,4 +14,5 @@ int main(){
     mf = tl/4;
     cout << "Media Final e "<< mf << endl;
     return 0;
+    
 }

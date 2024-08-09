@@ -1,5 +1,5 @@
 // Programa 02
-// Lista 01 programa02.cpp
+// Lista 01 exec02.cpp
 
 #include<iostream>
 using namespace std;
