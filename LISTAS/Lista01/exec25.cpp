@@ -1,55 +1,43 @@
-// programa 05
-// Lista 01 exec25.cpp
-
 #include<iostream>
-#include<iomanip>
 using namespace std;
 
+const int num = 5;
+
 int main(){
-    char p1, p2, p3, p4, p5;
-    int i{0};
-    cout << " 1. Telefonou para a vitima? "  ; cin >> p1;
-    cout << " 2. Esteve no local do crime? " ; cin >> p2;
-    cout << " 3. Mora perto da vitima? "     ; cin >> p3;
-    cout << " 4. Devia para a vitima? "      ; cin >> p4;
-    cout << " 5. Ja trabalhou com a vitima? "; cin >> p5;
-    if(p1 == 's' || p1 == 'S'){
-        ++i;
+    char p;
+    int contador = 0;
+    const char* perguntas[num]{
+        "1. Telefonou para a vitima? ",
+        "2. Esteve no local do crime? ",
+        "3. Mora perto da vitima? ",
+        "4. Devia para a vitima? ",
+        "5. Ja trabalhou com a vitima? "
+    };  
+    
+    for (int i = 0; i < num; ++i){
+        cout << perguntas[i]; cin >> p;
+        if (p == 's' || p == 'S'){
+            ++contador;
+        }
     }
-    if(p2=='s' || p2 == 'S'){
-        ++i;
-    }
-    if(p3=='s' || p3 == 'S'){
-        ++i;
-    }
-    if(p4=='s' || p4 == 'S'){
-        ++i;
-    }
-    if(p5=='s' || p5 == 'S'){
-        ++i;
-    }
-    cout << "Voce foi classificado como: ";
-    switch(i){
+    cout << "\n";
+    cout <<"Voce foi considerado: ";
+    switch(contador){
+        case 0:
         case 1:
-        cout << "Inocente";
+        cout << " Inocente";
         break;
         case 2:
-        cout << "Suspeito";
+        cout << " Suspeito";
         break;
         case 3:
-        cout << "Cumplices";
-        break;
         case 4:
-        cout << "Cumplices";
+        cout << " Cumplice";
         break;
         case 5:
-        cout << "Assassino";
-        break;
-        case 0:
-        cout << "Inocente";
+        cout << " Assassino";
         break;
     } 
-    cout << "\n\n";
-    
+    cout << "\n";  
     return 0;
 }
