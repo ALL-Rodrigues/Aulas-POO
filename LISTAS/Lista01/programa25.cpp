@@ -14,6 +14,7 @@ int main(){
         "5. Ja trabalhou com a vitima? "
     };  
     
+    cout << " Responda as perguntas com (S/N)."<< endl;
     for (int i = 0; i < num; ++i){
         cout << perguntas[i]; cin >> p;
         if (p == 's' || p == 'S'){
