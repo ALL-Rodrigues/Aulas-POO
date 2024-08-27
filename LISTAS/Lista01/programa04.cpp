@@ -1,5 +1,5 @@
 // Programa 04
-// Lista 01 exec04.cpp 
+// Lista 01 programa04.cpp 
 
 #include<iostream>
 #include<iomanip>

@@ -21,7 +21,7 @@ int main(){
     //declaração de variaveis
     int opcao = 0;
     // laço para escolha da operação desejada
-    while(opcao !=0){
+    while(opcao !=0 ){
         cout << setprecision(2);
         cout << setiosflags(ios::right);
         cout << setiosflags(ios::fixed);

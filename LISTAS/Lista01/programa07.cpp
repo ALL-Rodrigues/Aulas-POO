@@ -1,3 +1,6 @@
+// Programa 07
+// Lista 01 programa07.cpp
+
 #include<iostream>
 #include<iomanip>
 using namespace std;
