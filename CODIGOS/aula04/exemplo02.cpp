@@ -37,7 +37,7 @@ int main(){
     }
     // calculo da media
     // loop para percorrer cada linha da matriz
-        for(i = 0; i < LINHAS; ++i){
+    for(i = 0; i < LINHAS; ++i){
 
         //inicializa o soamtorio das notas do aluno 
         soma = 0;
@@ -60,6 +60,7 @@ int main(){
 
     // cabeçalho
     cout << setw(6) << "Aluno";
+    
     for(j = 0; j < COLUNAS; ++j){
         cout << setw(9) << "notas " << j+1;
     }
