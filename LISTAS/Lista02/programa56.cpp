@@ -1,6 +1,8 @@
 // Programa 56.
 // lista 02 progrma56.cpp
-/* A série de fibonacci é formada pela sequência 1, 1, 2, 3, 5, 8, 13, 21, 34, 55,..... .Escreva um programa capaz de gerar a série de fibonacci, até o n-ésimo termo. O programa deve solicitar ao usuário a entrada da quantidade de termos desejados. 
+/*  A série de fibonacci é formada pela sequência 1, 1, 2, 3, 5, 8, 13, 21, 34, 55,..... 
+    Escreva um programa capaz de gerar a série de fibonacci, até o n-ésimo termo. O programa deve 
+    solicitar ao usuário a entrada da quantidade de termos desejados. 
 */
 
 #include<iostream>
