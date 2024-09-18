@@ -1,7 +1,7 @@
 // Programa 15
 // Lista 01 programa15.cpp
 
-#includde<iostream>
+#include<iostream>
 
 using namespace std;
 

@@ -15,13 +15,32 @@
 */
 
 #include<iostream>
+#include<iomanip>
+#include<cmath>
 using namespace std;
 int main(){
-    float a, b, c, r;
+    float a, b, c, delta, x1, x2;
     cout << "informe o valor de a: "; cin >> a;
     cout << "informe o valor de b: "; cin >> b;
     cout << "informe o valor de c: "; cin >> c;
 
+    if(a == 0){
+        cout << " A funcao nao e do 2° grau. "<< endl;
+    } else {
+        delta = pow(b, 2) - 4 * a * c;
+        if(delta < 0){
+            cout << "Nao possui raizes reais por ser menor que 0." << endl;
+        } else if(delta == 0){
+            x1 = -b / (a * 2);
+            cout << "A equacao so pode ter uma raiz real: " << x1 << "." << endl;
+        } else {
+            x1 = (-b + sqrt(delta)) / (2 * a);
+            x2 = (-b - sqrt(delta)) / (2 * a);
+            //x1 = -b / (a * 2);
+            //x2 = -b / (a * 2);
+            cout << "as raizes da equacao sao: x1 = " << x1 << " e x2 = " << x2 << endl;
+        }
+    }
 
     return 0;
 }
