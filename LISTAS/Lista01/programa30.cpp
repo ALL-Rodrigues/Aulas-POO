@@ -34,10 +34,10 @@ int main(){
             x1 = -b / (a * 2);
             cout << "A equacao so pode ter uma raiz real: " << x1 << "." << endl;
         } else {
-            x1 = (-b + sqrt(delta)) / (2 * a);
-            x2 = (-b - sqrt(delta)) / (2 * a);
             //x1 = -b / (a * 2);
             //x2 = -b / (a * 2);
+            x1 = (-b + sqrt(delta)) / (2 * a);
+            x2 = (-b - sqrt(delta)) / (2 * a);
             cout << "as raizes da equacao sao: x1 = " << x1 << " e x2 = " << x2 << endl;
         }
     }
