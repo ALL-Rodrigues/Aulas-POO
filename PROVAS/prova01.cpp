@@ -32,7 +32,6 @@ int main() {
             maxValue = value;
         }
     }
-
     cout << "  + - - - - - - - - - -\n";
     for (int i = 0; i <= maxValue; i++) {
         cout << i << "  ";
@@ -41,3 +40,4 @@ int main() {
 
     return 0;
 }
+
