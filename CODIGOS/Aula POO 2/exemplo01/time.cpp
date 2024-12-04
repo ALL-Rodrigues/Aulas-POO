@@ -5,7 +5,6 @@
 #include <stdexcept> // Classes para relatório de exceções
 #include "time.hpp" 
 
-
 using namespace std;
 
 // -----------------------------------------------------------------------------------------------
@@ -39,11 +38,17 @@ void Time::setTime(int h, int m, int s) {
 
 // Método que exibe a hora em formato universçao (HH:MM:SS)
 void Time::printUniversal() const {
-cout << setfill('0') << setw(2) << hour << ":" << setw(2) << minute << ":" << setw(2) << second;
+    cout << setfill('0') 
+    << setw(2) << hour << ":" 
+    << setw(2) << minute << ":" 
+    << setw(2) << second;
 
 }
 
 // metodo que exibe a hora em formato padrao (HH:MM:SS AM ou PM)
 void Time::printStandard() const{
-    cout << ((hour == 0 || hour == 12) ? 12 : hour % 12) << ":" << setfill('0') << setw << minute << ":" << setw(2) << second <<(hour < 12 ? "AM" : "PM"); 
+    cout << ((hour == 0 || hour == 12) ? 12 : hour % 12) << ":" 
+    << setfill('0') << setw << minute << ":" 
+    << setw(2) << second <<(hour < 12 ? "AM" : "PM"); 
 }
+

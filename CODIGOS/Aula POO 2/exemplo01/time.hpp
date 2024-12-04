@@ -8,8 +8,8 @@ class Time{
     public:
     Time(); // construtor
     void setTime(int h, int m, int s); // define hora, minuto e segundo 
-    void printUniversal() const;  // exibe a hora em formato universal
-    void printStandard() const;   // exibe a hora em formato padrão
+    void printUniversal() const;       // exibe a hora em formato universal
+    void printStandard() const;        // exibe a hora em formato padrão
 
     private:
     unsigned int hour;    // 0 - 23 

@@ -1,7 +1,6 @@
 // Exemplo 01: time.cpp
 
 #include <iostream>
-#include <iomanip>
 #include <stdexcept> // Classes para relatório de exceções
 #include "time.hpp" 
 
@@ -19,9 +18,24 @@ int main (){
     t.printUniversal(); // 00:00:00
 
     cout << "\nThe Initial stand time is ";
-    t.printStandard(); // 1:27:06 PM
+    t.printStandard(); // 12:00:00 AM
 
     cout << endl;
+
+    //------------------------------------------------
+    // define um novo nono horario
+    t.setTime(13, 27, 6);
+
+    // exibe oss novos valores do objeto Time
+    cout << "\nUniversal time after setTime is ";
+    t.printUniversal(); //13:27:06
+
+    cout << "\nStandard time after setTime is ";
+    t.printStandard(); //1:27:06 PM
+
+    cout << endl;
+    //------------------------------------------------------
+
 
     // Tentativa de definir um horario invalido
     try{
