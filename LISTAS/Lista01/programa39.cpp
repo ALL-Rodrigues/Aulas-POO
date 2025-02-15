@@ -1,28 +1,45 @@
+// Programa 39
+// Lista 01 priograma39.cpp
+
+/*  Escreva um programa que receba o valor de três ângulos de um triangulo. em seguida, o programa deve 
+    informar se o triangulo é acutângulo, retângulo ou obtusângulo. considere as seguintes informações: 
+    a. Triangulo Retângulo   : Possui um angulo reto (igual a 90°);
+    b. Triangulo Obtusângulo : Possui um ângulo obtuso (maior que 90°);
+    c. Triangulo Acutângulo  : Possui três ângulos agudos (menores que 90°). 
+*/
+
 #include<iostream>
-#include <cstdlib>
+#include<cstdlib>
 #include<iomanip>
 #include<string>
 
 using namespace std;
 
 int main(){
-    string tipo = "alcatra";
-    int tipocarne = 2;
-    int carneKg = 12; 
-    int precoTotal = 489.90; 
-    //float carneKg = 12.9;
-    float desconto = 3.59;
 
+    cout << "Programa Calculo de Triangulo:\n\n";
 
-    cout << "+--------------------------------------------+"                         << endl;
-    cout << "|                  Cupom Fiscal              |"                         << endl;
-    cout << "+--------------------------------------------+"                         << endl;
-    cout << "| Tipo da Carne....: [" << tipocarne << "] " << tipo << setw(14) << "|" << endl;
-    cout << "| Quantidade.......: " << carneKg                    << setw(23) << "|" << endl;
-    cout << "| Preco total......: " << precoTotal                 << setw(22) << "|" << endl;
-    cout << "| Valor do desconto: " << desconto - precoTotal      << setw(18) << "|" << endl;
-    cout << "+--------------------------------------------+"                         << endl;
-    cout << "| Valor a ser pago.: " << desconto                   << setw(21) << "|" << endl;
-    cout << "+--------------------------------------------+"                         << endl;
+    int anguloA, anguloB, anguloC, r;
+
+    cout << "Informe o Angulo A: "; cin >> anguloA;
+    cout << "Informe o Angulo B: "; cin >> anguloB;
+    cout << "Informe o Angulo C: "; cin >> anguloC; 
+
+    cout << "\n";
+
+    r = anguloA + anguloB + anguloC;
+
+    if(r == 180){
+      if(anguloA == 90 || anguloB == 90 || anguloC == 90){
+          cout << "Tringulo Retangulo.";
+        }else if(anguloA > 90 || anguloB > 90 || anguloC > 90){
+          cout << "Triangulo Obtusangulo.";
+        }else if(anguloA < 90 & anguloB < 90 & anguloC < 90){
+          cout << "Triangulo Acutangulo.";
+        }
+    }else{
+      cout << "valores dos angulos somados nao da 180. tente novamente.";
+    }
+  
     return 0;
 }

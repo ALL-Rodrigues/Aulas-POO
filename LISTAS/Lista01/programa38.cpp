@@ -145,6 +145,24 @@ void cupomFiscal(string tipo, int meioPagamento, float carneKg, float precoTotal
     cout << "| Tipo da Carne........: [" << tipocarne << "] " << tipo << endl;
     cout << "| Quantidade...........: "  << carneKg                   << endl;
     cout << "| Preco total..........: "  << precoTotal                << endl;
+    cout << "| Meio de Pagamento....: [" << meioPagamento <<"] ";
+
+    // switch para aparecer o nome do meio de Pagamento na nota fiscal 
+    switch(meioPagamento){
+        case 1: 
+            cout << "Cartao Paraiba" << endl;
+            break;
+        case 2: 
+            cout << "Dinheiro" << endl;
+            break;
+        case 3: 
+            cout << "Pix" << endl;
+            break;
+        case 4:
+            cout << "calote" << endl;
+            break;
+    };
+
     cout << "| Valor do desconto"; 
     if(meioPagamento == 1){ 
         cout << "(5%): " << precoTotal-desconto /*desconto - precoTotal*/ << endl;
@@ -177,14 +195,15 @@ void tipoCarne(){
 
 void tabelaPreco(){
     cout << "\n";
-    cout << " O Armazem Paraiba esta com uma promocao de carnes imperdivel. confira:\n\n";
+    cout << " O Armazem Paraiba esta com uma promocao de carnes imperdivel. confira:\n";
 
-    cout << "+-------------+----------+-------------+" << endl;
-    cout << "|             |Ate 5Kg   |Acima de 5Kg |" << endl;
-    cout << "| Contra File |R$ 40.50  |R$ 35.50     |" << endl;
-    cout << "| Alcatra     |R$ 41.80  |R$ 36.25     |" << endl;
-    cout << "| Picanha     |R$ 39.90  |R$ 35.99     |" << endl;
-    cout << "+-------------+----------+-------------+" << endl;
+    cout << "+-------------+----------+--------------+" << endl;
+    cout << "|             | Ate 5Kg  | Acima de 5Kg |" << endl;
+    cout << "+-------------+----------+--------------+" << endl;
+    cout << "| Contra File | R$ 40.50 | R$ 35.50     |" << endl;
+    cout << "| Alcatra     | R$ 41.80 | R$ 36.25     |" << endl;
+    cout << "| Picanha     | R$ 39.90 | R$ 35.99     |" << endl;
+    cout << "+-------------+----------+--------------+" << endl;
     return ;
 }
 
